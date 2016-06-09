@@ -22,6 +22,7 @@ button {
 }
 
 #inputBox {
+  position: static;
   display: block;
   float: right;
   height: 35px;
@@ -33,6 +34,7 @@ button {
 }
 
 #addButton {
+  position: static;
   display: block;
   float: right;
   height: 35px;
@@ -44,13 +46,12 @@ button {
 
 
 h1{
-  position: relative; 
-  bottom: 17px;
+
   background: url('https://media2.giphy.com/media/d97OPMEimWGBi/200_s.gif');
   font-family: fantasy;
   color: #003380;
   border-style: outset;
-  height: 50px;
+  height: 45px;
   text-align: left;
   font-size: 250%;
 }
