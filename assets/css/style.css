@@ -1,32 +1,70 @@
 body{
-background-color: grey;
+ background: url('https://s-media-cache-ak0.pinimg.com/736x/ec/8d/da/ec8dda885688ef35203135cc247e2259.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 button {
-  margin: 15px;
+  font-family: fantasy;
+  background-color: #003380 ; 
+  border: none;
+  color: white;
+  display: block;
+  float: left;
+  height: 50px;
+  width: 100px;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 13px;
+  text-decoration: none;
 }
 
-#buttonArea {
-  background-color: black;
+#inputBox {
+  display: block;
+  float: right;
+  height: 35px;
+  width: 200px;
+  margin-right: 5px;
+  line-height: 15px;
+  text-decoration: none;
 
+}
 
+#addButton {
+  display: block;
+  float: right;
+  height: 35px;
+  width: 100px;
+  margin-right: 5px;
+  line-height: 15px;
+  text-decoration: none;
 }
 
 
 h1{
-  color: blue;
-  border: solid;
-  background-color: black;
+  position: relative; 
+  bottom: 17px;
+  background: url('https://media2.giphy.com/media/d97OPMEimWGBi/200_s.gif');
+  font-family: fantasy;
+  color: #003380;
+  border-style: outset;
+  height: 50px;
+  text-align: left;
+  font-size: 250%;
 }
 
 
-#gifArea {
-background-color: skyblue;
-}
 
 .gifDiv {
+
   float: left;
-  margin: 10px;
-  border: 2px solid black;
+  margin:5px;
+  border: 2px solid white;
 }
+  
+
+
+
 
