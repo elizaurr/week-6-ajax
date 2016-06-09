@@ -106,7 +106,7 @@ $(document).ready(function(){
   
 
   //function adds add button to the list of button
-  $("#addShow").click(function(){
+  $("#addButton").click(function(){
       var addedButton = $("#inputBox").val();
       $ ("#inputBox").val(null);
       shows.push(addedButton);
