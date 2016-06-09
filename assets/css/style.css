@@ -1,0 +1,32 @@
+body{
+background-color: grey;
+}
+
+button {
+  margin: 15px;
+}
+
+#buttonArea {
+  background-color: black;
+
+
+}
+
+
+h1{
+  color: blue;
+  border: solid;
+  background-color: black;
+}
+
+
+#gifArea {
+background-color: skyblue;
+}
+
+.gifDiv {
+  float: left;
+  margin: 10px;
+  border: 2px solid black;
+}
+
