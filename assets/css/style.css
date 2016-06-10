@@ -20,7 +20,7 @@ button {
   line-height: 13px;
   text-decoration: none;
   border-style: outset;
-  
+
 
 }
 
@@ -43,6 +43,7 @@ button {
   margin-right: 5px;
   line-height: 15px;
   text-decoration: none;
+  margin-top: 5px;
 }
 
 
@@ -71,13 +72,14 @@ header {
   0 10px 10px rgba(0,0,0,.2),
   0 20px 20px rgba(0,0,0,.15);
   text-align: center;
+  border-color: silver;
 }
 
 
 .gifDiv {
 
   float: left;
-  margin: 50px;
+  margin: 85px;
   border: 20px solid #003380;
   color:  white;
   font-weight: bold;
@@ -93,6 +95,31 @@ header {
   width: 300px;
   
 }
+
+
+.container {
+  float: right;
+  width:  250px;
+  height: 150px;
+  border: 3px solid;
+  border-color: #003380;
+  border-style: outset;
+  margin-bottom: 3px;
+
+}
+
+
+h3 {
+  color:  white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: fantasy;
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+
 
 
 
