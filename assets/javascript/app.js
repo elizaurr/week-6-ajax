@@ -53,8 +53,8 @@ $(document).ready(function(){
           //make divs and img and append them 
           for (var i = 0; i < 10; i++) {
 
-            animatedURl.push(gif.data[i].images.fixed_height.url);
-            staticURL.push(gif.data[i].images.fixed_height.url);
+            animatedURl.push(gif.data[i].images.original.url);
+            staticURL.push(gif.data[i].images.original_still.url);
 
 
             var newDiv = $("<div>");
@@ -69,8 +69,10 @@ $(document).ready(function(){
 
             var newGif = $("<img>");
 
-            newGif.attr("data-number",i)
-            newGif.attr("src", gif.data[i].images.fixed_height_still.url);
+            newGif.attr("data-number",i);
+            newGif.attr("data-moving", true);
+            newGif.addClass("gif")
+            newGif.attr("src", gif.data[i].images.original.url);
 
             newDiv.append(p);
             newDiv.append(newGif);
@@ -81,19 +83,37 @@ $(document).ready(function(){
 
 
             //this function plays and pause gif
-            newGif.click(function(){
-              if ( $(this).attr("src") == staticURL[$(this).attr("data-number")]) {
-                  $(this).attr("src",animatedURl[$(this).attr("data-number")])
-              }
-
-              else {
-                $(this).attr("src",staticURL[$(this).attr("data-number")]);
-
-              };
-
-
-            });
+            
           };
+
+          $(document).on('click', '.gif', function(){
+            console.log(animatedURl)
+            if ($(this).attr("data-moving") === "false") {
+              console.log("not moving")
+              $(this).attr("data-moving", "true")
+              $(this).attr("src",animatedURl[$(this).attr("data-number")])
+            } else {
+              $(this).attr("data-moving", "false")
+              console.log("moving")
+              $(this).attr("src",staticURL[$(this).attr("data-number")])
+
+            }
+            
+
+          })
+
+          // newGif.click(function(){
+          //     if ( $(this).attr("src") == staticURL[$(this).attr("data-number")]) {
+          //         $(this).attr("src",animatedURl[$(this).attr("data-number")])
+          //     }
+
+          //     else {
+          //       $(this).attr("src",staticURL[$(this).attr("data-number")]);
+
+          //     };
+
+
+          //   });
 
 
         });
